@@ -1,0 +1,118 @@
+<div class="mainLeft">
+  <div class="paragraph description">"Aprende lógica, es un blog que te permite buscar todo tipo de información relacionada con la lógica en sí, (artículos, citas, redacciones de libros, etc), entre miles.."</div>
+  <div class="images">
+    <img alt />
+  </div>
+</div>
+<div class="mainRight">
+  <div class="title articlesTitle">Artículos.</div>
+  <div class="article">
+    <span class="paragraph">
+      <a class="link3" href="./la-logica">La lógica</a>
+      <br />
+      <br />
+      A la lógica la podemos considerar desde dos puntos de vista; como ciencia y como técnica. Como ciencia porque investiga, establece y desarrolla los métodos y principios aptos para distinguir el razonamiento correcto del incorrecto. Como técnica, la l... 
+      <a class="link2" href="./la-logica">Leer más</a>
+      <br />
+      <br />
+      Publicado por: <span class="highlight">Gilda Gómez</span>
+    </span>
+  </div>
+  <div class="article">
+    <span class="paragraph">
+      <a class="link3" href="./logica-proposicional">Lógica proposicional</a>
+      <br />
+      <br />
+      La lógica proposicional es la parte más elemental de la lógica moderna, estudia las relaciones formales extraproposicionales, es decir, aquellas relaciones existentes entre proposiciones y no las que se da dentro de ellas.<br />El lenguaje, en el sent... 
+      <a class="link2" href="./logica-proposicional">Leer más</a>
+      <br />
+      <br />
+      Publicado por: <span class="highlight">Gilda Gómez</span>
+    </span>
+  </div>
+  <div class="article">
+    <span class="paragraph">
+      <a class="link3" href="./tablas-de-verdad">Tablas de verdad</a>
+      <br />
+      <br />
+      Introducción<br /><br />La tabla de verdad nos permite determinar la verdad de una proposición molecular mediante la verdad o falsedad de las proposiciones atómicas que las componen.<br />Quienes definen esta operación binaria sobre un conjun... 
+      <a class="link2" href="./tablas-de-verdad">Leer más</a>
+      <br />
+      <br />
+      Publicado por: <span class="highlight">Gilda Gómez</span>
+    </span>
+  </div>
+  <div class="article">
+    <span class="paragraph">
+      <a class="link3" href="./algebra-de-boole">Algebra de Boole</a>
+      <br />
+      <br />
+      Introducción.<br />A Aristóteles le corresponde el mérito de ser fundador de la lógica cuando propuso los primeros catorce silogismos, los teólogos y filósofos medievales añadieron otros cincos tipos de silogismos a los catorce de Aristóteles. ... 
+      <a class="link2" href="./algebra-de-boole">Leer más</a>
+      <br />
+      <br />
+      Publicado por: <span class="highlight">Gilda Gómez</span>
+    </span>
+  </div>
+  <div class="article">
+    <span class="paragraph">
+      <a class="link3" href="./algoritmos-y-programas">Algoritmos y programas</a>
+      <br />
+      <br />
+      Introducción<br />Este apartado es el estudio de los algoritmos y la programación, temas centrales de las ciencias de la computación y de cualquier carrera de informática. Desde el nacimiento de la informática, el hombre ha buscado y desarrollado... 
+      <a class="link2" href="./algoritmos-y-programas">Leer más</a>
+      <br />
+      <br />
+      Publicado por: <span class="highlight">Gilda Gómez</span>
+    </span>
+  </div>
+  <div class="article">
+    <span class="paragraph">
+      <a class="link3" href="./programacion-modular-y-estructurada">Programación modular y estructurada</a>
+      <br />
+      <br />
+      La programación estructurada es un conjunto de técnicas para desarrollar algoritmos fáciles de escribir, verificar, leer y modificar. La programación estructurada utiliza:<br />• Diseño descendente. Consiste en diseñar los algoritmos en etapas, yendo de los conceptos generales a los de detalle. El diseño descendente se verá completado y ampliado con el modular...
+      <a class="link2" href="./programacion-modular-y-estructurada">Leer más</a>
+      <br />
+      <br />
+      Publicado por: <span class="highlight">Gilda Gómez</span>
+    </span>
+  </div>
+</div>
+<script type="text/javascript">
+  function onLeave () {
+    clearTimeout(timeOut);
+  }
+  
+  var timeOut;
+  
+  (function () {
+    var LAST_IMAGE = 9;
+    var image = 1;
+    
+    function nextImage () {
+      timeOut = setTimeout(function () {
+        $('.images img').fadeOut(500, function () {
+          image++;
+          
+          if (image > LAST_IMAGE) {
+            image = 1;
+          }
+          
+          $('.images img').attr('src', './img/home/' + image + '.jpg');
+        });
+      }, 5000);
+    }
+    
+    $('.images img').on('load', function (evt) {
+      $(this).fadeIn(500, function () {
+        nextImage();
+      });
+    });
+    
+    $('.images img').hide();
+    $('.images img').attr('src', './img/home/1.jpg');
+  })();
+  
+  setLinks();
+</script>

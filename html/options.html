@@ -1,0 +1,68 @@
+<div class="title pageTitle">
+  Otras opciones...
+</div>
+<p class="paragraph optionsOption">
+  <a class="link3" href="./sources">Referencias bibliográficas / electrónicas</a>
+  <br />
+  Conoce cuales son las fuentes bibliográficas y electrónicas del blog.
+</p>
+<p class="paragraph optionsOption">
+  <a class="link3" href="./download-assignment.php">Descargar la tarea asignada por la profesora</a>
+  <br />
+  Consulta la última tarea asignada.
+</p>
+<p class="paragraph optionsOption">
+  <a id="sendHomeworkLink" class="link3" href="#">Envia tu tarea</a>
+  <br />
+  Haz click para enviar tu tarea a la profesora.
+</p>
+<div id="sendHomeworkMessage"></div>
+<div class="optionsSendHomework">
+  <form action="./json/homework_send.php" method="post" enctype="multipart/form-data">
+    <div class="left">
+      <input name="homework" class="input2" type="file" />
+    </div>
+    <div class="right">
+      <button id="sendHomeworkButton" class="button1">OK</button>
+    </div>
+  </form>
+</div>
+<script type="text/javascript">
+  setLinks();
+  
+  $('#sendHomeworkLink').click(function (evt) {
+    evt.preventDefault();
+    $('.optionsSendHomework').hide();
+    $('.optionsSendHomework').fadeIn('slow');
+  });
+  
+  $('form').submit(function (evt) {
+    evt.preventDefault();
+    $('#sendHomeworkButton').html('Enviando...');
+    $('form').ajaxSubmit(function (data) {
+      try {
+        var json = JSON.parse(data);
+        var errno = json.errno;
+        var message = json.message;
+      } catch (ex1) {
+        var errno = 1;
+        var message = 'No se pudo procesar la subida.';
+        
+        console.error(data);
+      }
+      
+      $('#sendHomeworkButton').html('OK');
+      $('#sendHomeworkMessage').hide();
+      
+      if (errno == 1) {
+        $('#sendHomeworkMessage').attr('class', 'sendHomeworkErrorMessage');
+      } else {
+        $('input').val(null);
+        $('#sendHomeworkMessage').attr('class', 'sendHomeworkSuccessMessage');
+      }
+      
+      $('#sendHomeworkMessage').html(message);
+      $('#sendHomeworkMessage').fadeIn('fast');
+    });
+  });
+</script>

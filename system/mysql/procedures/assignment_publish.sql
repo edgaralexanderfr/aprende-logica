@@ -1,0 +1,1 @@
+drop procedure if exists assignment_publish; delimiter // create procedure assignment_publish (in p_atype varchar(5))   begin     insert into assignments (atype, publish_date) values (p_atype, now());         select last_insert_id() as id;   end   //   delimiter ; 

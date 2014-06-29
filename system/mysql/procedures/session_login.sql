@@ -1,0 +1,1 @@
+drop procedure if exists session_login; delimiter // create procedure session_login (in p_alias varchar(100), in p_password varchar(40))   begin     select * from users where alias = p_alias and password_hash = sha1(concat(p_password, salt));   end   //   delimiter ; 

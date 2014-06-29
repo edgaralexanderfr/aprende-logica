@@ -1,0 +1,53 @@
+/* begin mainLeft */
+
+.content .mainLeft {
+  width : 50%;
+  float : left;
+}
+
+.content .mainLeft .description {
+  margin-top : 40px;
+  margin-left : 20px;
+  width : 400px;
+  text-align : center;
+}
+
+.content .mainLeft .images {
+  margin-top : 20px;
+  margin-bottom : 40px;
+  width : 100%;
+  height : 370px;
+  text-align : center;
+}
+
+.content .mainLeft .images img {
+  border : 2px solid;
+  border-color : #3C7169;
+}
+
+/* end mainLeft */
+
+/* begin mainRight */
+
+.content .mainRight {
+  width : 50%;
+  float : right;
+}
+
+.content .mainRight .articlesTitle {
+  margin-top : 40px;
+  margin-bottom : 20px;
+  padding-bottom : 15px;
+  width : 100%;
+  border-bottom : 1px solid;
+  text-align : center;
+}
+
+.content .mainRight .article {
+  margin-top : 30px;
+  margin-bottom : 30px;
+  width : 94%;
+  text-align : justify;
+}
+
+/* end mainRight */

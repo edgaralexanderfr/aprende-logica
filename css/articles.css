@@ -1,0 +1,59 @@
+/* begin articleLeft */
+
+.content .articleLeft {
+  width : 60%;
+  float : left;
+}
+
+.content .articleLeft .article {
+  margin-bottom : 40px;
+  padding-left : 50px;
+  width : 100%;
+  text-align : justify;
+}
+
+.content .articleLeft .article .container {
+  margin-top : 20px;
+  margin-bottom : 20px;
+  text-align : center;
+}
+
+.content .articleLeft .article .container img {
+  border : 1px solid;
+  border-color : #3C7169;
+}
+
+/* end articleLeft */
+
+/* begin articleRight */
+
+.content .articleRight {
+  width : 40%;
+  text-align : center;
+  float : right;
+}
+
+.content .articleRight .author {
+  margin-top : 40px;
+  width : 100%;
+}
+
+.content .articleRight .image {
+  margin-top : 20px;
+  margin-bottom : 20px;
+  width : 100%;
+}
+
+.content .articleRight .image img {
+  border-radius : 50%;
+}
+
+.content .articleRight .occupation {
+  margin-bottom : 40px;
+  width : 100%;
+  font-style : italic;
+  color : #333333;
+  text-align : center;
+}
+
+/* end articleRight */

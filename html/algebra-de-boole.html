@@ -1,0 +1,275 @@
+<div class="articleLeft">
+  <div class="title pageTitle">
+    Algebra de Boole
+  </div>
+  <div class="paragraph article">
+    <span class="highlight">Introducción.</span>
+    <br />
+    <br />
+    A Aristóteles le corresponde el mérito de ser fundador de la lógica cuando propuso los primeros catorce silogismos, los teólogos y filósofos medievales añadieron otros cincos tipos de silogismos a los catorce de Aristóteles. Estas diecinueve leyes constituyeron durante cientos de años los fundamentos de la enseñanza de la lógica.
+    
+    <div class="container">
+      <img src="./img/algebra-de-boole/a.jpg" alt />
+    </div>
+    
+    En 1847, el maestro de escuela y matemático George Boole (1815-1864) publicó un panfleto titulado The Mathematical Analysis of Logic (Análisis matemático de la lógica), donde estableció un sistema de axiomas a partir de los cuales, se podían deducir nuevas proposiciones. Para representar las proposiciones, Boole utilizó símbolos algebraicos como x ,y deduciendo nuevas proposiciones aplicando las operaciones algebraicas.
+    <br />
+    <br />
+    La idea de sustituir proposiciones por símbolos se le había ocurrido anteriormente a otros, pero fue Boole el primero que produjo un sistema consistente y fácilmente manejable, por lo que significo ser nombrado profesor del Queens College (actualmente University College) de Irlanda, aunque no tenía grado académico de profesor.
+    <br />
+    <br />
+    George Boole presentó el primer tratamiento sistemático de la lógica y para ello, desarrolló un sistema algebraico, conocido ahora como Álgebra de Boole. Además de sus aplicaciones al campo de la lógica, el álgebra de Boole ha tenido dos aplicaciones importantes: el tratamiento de conjuntos mediante las operaciones de unión e intersección que ha servido de base a la teoría de la probabilidad y el diseño de circuitos digitales combinacionales.
+    
+    <div class="container">
+      <img src="./img/algebra-de-boole/b.jpg" alt />
+    </div>
+    
+    En 1913, los logicistas Alfred North Whitehead y Bertrand Russell, usando símbolos creado por el matemático y logicista Giuseppe Peano, desarrollaron el sistema axiomático de las proposiciones.
+    
+    <div class="container">
+      <img src="./img/algebra-de-boole/c.jpg" alt />
+    </div>
+    
+    <span class="highlight">Definición de álgebra de Boole y Teoremas.</span>
+    <br />
+    <br />
+    Definición.
+    <br />
+    <br />
+    Un álgebra booleana es un sistema algebraico constituido por un conjunto B junto con dos operaciones + (como la adición) y x (como la multiplicación) definida sobre el conjunto, tales que para cualesquiera elementos a, b, y c de B se verifica las siguientes propiedades:
+    
+    <div class="container">
+      <img src="./img/algebra-de-boole/d.jpg" alt />
+    </div>
+    
+    Teorema: Para todo elemento a, a + a = a y a x a = a.
+    <br />
+    <br />
+    Prueba:
+    
+    <div class="container">
+      <img src="./img/algebra-de-boole/e.jpg" alt />
+    </div>
+    
+    La prueba de aa se obtiene por dualidad:
+    
+    <div class="container">
+      <img src="./img/algebra-de-boole/f.jpg" alt />
+    </div>
+    
+    Teorema: Para todo elemento a, a + 1 = a y a x 0 = 0.
+    <br />
+    <br />
+    Prueba:
+    
+    <div class="container">
+      <img src="./img/algebra-de-boole/g.jpg" alt />
+    </div>
+    
+    Ejemplo: Sea B = {1,0} y sean las operaciones + y x definidas como sigue:
+    
+    <div class="container">
+      <img src="./img/algebra-de-boole/h.jpg" alt />
+    </div>
+    
+    Entonces B, o más precisamente, la terna (B, +, x) es un álgebra de Boole. El álgebra de Boole es un sistema axiomático abstracto que se puede interpretar por diferentes modelos. La siguiente tabla incluye la simbología de los tres modelos del álgebra de Boole.
+    
+    <div class="container">
+      <img src="./img/algebra-de-boole/i.jpg" alt />
+    </div>
+    
+    <span class="highlight">Circuitos.</span>
+    <br />
+    <br />
+    Una de las primeras aplicaciones no matemáticas de la lógica simbólica fue vista en la tesis de maestría de Claude Shannon en 1937. Shannon mostró cómo la lógica podría usarse como ayuda al diseñar circuitos eléctricos. Su trabajo fue inmediatamente adoptado por los diseñadores de computadoras. Estas computadoras pudieron simplificarse en la etapa de desarrollo y construirse por menos dinero, usando las ideas de Shannon.
+    
+    <div class="container">
+      <img src="./img/algebra-de-boole/j.jpg" alt />
+    </div>
+    
+    Un interruptor es un dispositivo que sirve para cerrar o abrir un circuito eléctrico. Un circuito eléctrico puede contener varios dispositivos eléctricos como interruptores, resistencias, etc. Un interruptor tiene dos estados, llamados estado abierto y estado cerrado.
+    <br />
+    <br />
+    Estado cerrado: cuando el interruptor está cerrado fluye la corriente.
+    <br />
+    Estado abierto: cuando el interruptor está abierto la corriente no paso.
+    <br />
+    Estado cerrado del interruptor = 1.
+    <br />
+    Estado abierto del interruptor = 0.
+    
+    <div class="container">
+      <img src="./img/algebra-de-boole/k.jpg" alt />
+    </div>
+    
+    Estos circuitos pueden reducirse a dos fundamentales: circuitos en serie y circuitos en paralelos.
+    <br />
+    <br />
+    <span class="highlight">Circuitos en Serie.</span>
+    <br />
+    <br />
+    En su forma más elemental un circuito en serie esta formado por dos interruptores denotado por X e Y, y unido por una sola línea de flujo de corriente.
+    
+    <div class="container">
+      <img src="./img/algebra-de-boole/m.jpg" alt />
+    </div>
+    
+    X	Y	Corriente:
+    <br />
+    <br />
+    a) 1	1	Pasa.
+    <br />
+    b) 1	0	No pasa.
+    <br />
+    c) 0	1	No pasa.
+    <br />
+    d) 0	0	No pasa.
+    <br />
+    <br />
+    <span class="highlight">Circuitos en Paralelo.</span>
+    <br />
+    <br />
+    Otra forma de conectar dos interruptores X e Y, es por medio del circuito e paralelo, en donde la corriente puede pasar alternativamente por el interruptor X o por el interruptor Y o por los dos interruptores a la vez.
+    
+    <div class="container">
+      <img src="./img/algebra-de-boole/n.jpg" alt />
+    </div>
+    
+    X	Y	Corriente:
+    <br />
+    <br />
+    a) 1	1	Pasa.
+    <br />
+    b) 1	0	Pasa.
+    <br />
+    c) 0	1	Pasa.
+    <br />
+    d) 0	0	No pasa.
+    <br />
+    <br />
+    <span class="highlight">Circuitos en Serie y en Paralelos.</span>
+    <br />
+    <br />
+    Los circuitos en serie y en paralelo se pueden combinar entre sí para obtener nuevos circuitos.
+    <br />
+    <br />
+    <span class="highlight">Complementación de Circuitos.</span>
+    <br />
+    <br />
+    Así como las operaciones de la conjunción y de la disyunción tienen su equivalente en los circuitos, así también lo tiene la operación de la negación, por la operación de la Complementación. Los estados entre los interruptores X y X' se expresan por medio de la tabla análoga a la negación.
+    <br />
+    <br />
+    <span class="highlight">Ejercicios 1:</span>
+    <br />
+    <br />
+    Construya los siguientes circuitos:
+    <br />
+    <br />
+    a) X + (Y x Z)
+    <br />
+    b) X + (Y + Z)
+    <br />
+    c) (X x Y) + (Z x W)
+    <br />
+    d) (X + Y) x (Z + W)
+    <br />
+    e) (X x Y x Z) + (X’x Y’x Z’)
+    <br />
+    f) (X + Y + Z) x (X’ + Y’ + Z’)
+    <br />
+    <br />
+    <span class="highlight">Ejercicio 2</span>, Traduzca a formula los siguientes circuitos:
+    
+    <div class="container">
+      <img src="./img/algebra-de-boole/l.jpg" alt />
+    </div>
+    
+    <span class="highlight">Ejercicio 3</span>, Simplificar los circuitos:
+    
+    <div class="container">
+      <img src="./img/algebra-de-boole/o.jpg" alt />
+    </div>
+    
+    <span class="highlight">Algebra de Boole o Función Interruptor.</span>
+    <br />
+    <br />
+    Axioma 1: a + b = b + a; a x b = b x a.
+    <br />
+    Axioma 2: a + (b + c) = (a + b) + c; a x (b x c) = (a x b) x c.
+    <br />
+    Axioma 3: a x (b + c) = (a x b) + (a x c); a + (b x c) = (a + b) x (a + c).
+    <br />
+    Axioma 4: a x 1 = a; a + 0 = a.
+    <br />
+    Axioma 5: a + a' = 1; a x a' = 0.
+    <br />
+    Otras funciones: a + 1 = 1; a x 0 = 0; a + a = a; a + (a x b) = a + b; a x (a + b) = a.
+    <br />
+    <br />
+    <span class="highlight">Funciones Booleanas.</span>
+    <br />
+    <br />
+    Una función booleana es una expresión derivada al aplicar un número finito de aplicaciones de las operaciones +, x y a los elementos de un álgebra de Boole.
+    <br />
+    <br />
+    Ejemplos:
+    <br />
+    <br />
+    a)	F (x, y) = xy' + xy
+    <br />
+    b)	F (x, y) = x + xy
+    <br />
+    <br />
+    <span class="highlight">La lógica y sus aplicaciones.</span>
+    <br />
+    <br />
+    La interpretación del álgebra de Boole a los circuitos eléctricos fue sugerida por primera vez en 1910 por Paul S. Ehrenfest en Rusia y en 1936 en Japón. Pero el primer gran documento que introdujo a los diseñadores de computadoras se titulo "A symbolic Analysis of Relay and Switching Circuits" de Claude E. Shannon en 1938. Desde la publicación del documento de Shannon, el álgebra de Boole se constituyó en un instrumento esencial en el diseño de las computadoras, al permitir simplificar los circuitos y reducir eficientemente el Hardware de las computadoras.
+    <br />
+    <br />
+    La primera aplicación de la lógica simbólica a los negocios se ubica en 1936 y fue realizada por el matemático Edmund C. Berkeley. Trabajando para una compañía de seguro, trató de simplificar las reglas bajo las cuales se distribuían las primas entre los asegurados. Redujo a una simple regla, las múltiples disposiciones utilizadas por las aseguradoras en la formulación de las pólizas de los asegurados, ahorrando con ello cantidades considerables de dinero.
+    
+    <div class="container">
+      <img src="./img/algebra-de-boole/p.jpg" alt />
+    </div>
+    
+    Otra aplicación esta en el estudio de las relaciones entre más de 10.000 millones de células nerviosas del cerebro humano, la Universidad de Illinois aplicó el documento Principia Mathematical de Russell y Whitehead, en la que se sugirió que el estudio de la cibernética, en el que se analiza las similitudes entre el cerebro humano y las computadoras fuera realizadas aplicando las leyes de la lógica simbólica.
+    <br />
+    <br />
+    Uno de los grandes problemas en la construcción de las primeros computadoras fue reducir el número de tubos. El Eniac, primera computadora construida, contenía 20.000 tubos y más de 500.000 conexiones. En la construcción de Mark III, todo electrónico, los ingenieros decidieron que 9 era el número mínimo de tubos. No obstante, los matemáticos T. Kalin y W. Burkhart de la Universidad de Harvard demostraron, aplicando lógica simbólica que su número era 6, lo que implicó una economía de un tercio, en términos de costo, tiempo de procesamiento y el correspondiente aumento en su eficiencia.
+    
+    <div class="container">
+      <img src="./img/algebra-de-boole/q.jpg" alt />
+    </div>
+    
+    <span class="highlight">Aplicaciones a Circuitos de Distribución.</span>
+    <br />
+    <br />
+    En un avión de prueba hay tres pilotos con interruptores cada uno. Una luz roja se enciende cuando uno de ellos indica peligro y se enciende la luz verde cuando los tres señalan que se puede seguir la prueba. Calcular la tabla booleana y trazar el circuito correspondiente.
+    
+    <div class="container">
+      <img src="./img/algebra-de-boole/r.jpg" alt />
+    </div>
+    
+    Función booleana A.
+    <br />
+    <br />
+    Luz Roja: R = xyz + xyz’ + xy’z + x’yz + xy’z’ + x’yz’ + x’y’z = (x’ + y’ + z’)’ = x + y + z.
+    <br />
+    <br />
+    Función booleana B.
+    <br />
+    <br />
+    Luz Verde: V = x’y’z’.
+  </div>
+</div>
+<div class="articleRight">
+  <div class="paragraph author">
+    Por: <span class="highlight">Gilda Gómez</span>
+  </div>
+  <div class="image">
+    <img src="./img/about/gilda.jpg" alt />
+  </div>
+  <div class="paragraph occupation">
+    Profesora de matemáticas.
+  </div>
+</div>

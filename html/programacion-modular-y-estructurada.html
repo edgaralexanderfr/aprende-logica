@@ -1,0 +1,216 @@
+<div class="articleLeft">
+  <div class="title pageTitle">
+    Programación modular y estructurada
+  </div>
+  <div class="paragraph article">
+    La programación estructurada es un conjunto de técnicas para desarrollar algoritmos fáciles de escribir, verificar, leer y modificar. La programación estructurada utiliza:
+    <br />
+    <br />
+    a) Diseño descendente. Consiste en diseñar los algoritmos en etapas, yendo de los conceptos generales a los de detalle. El diseño descendente se verá completado y ampliado con el modular.
+    <br />
+    <br />
+    b) Programación modular. El diseño descendente resuelve un problema efectuando descomposiciones en otros problemas más sencillos a través de distintos niveles de refinamiento.
+    
+    <div class="container">
+      <img src="./img/programacion-modular-y-estructurada/a.jpg" alt />
+    </div>
+    
+    La programación modular consiste en resolver de forma independiente los subproblemas resultantes de una descomposición. La programación modular completa y amplia el diseño descendente como método de solución de problemas y permite proteger la estructura de la información asociada a un subproblema. Cuando se trata de este modo, existirá un algoritmo principal o conductor que transferirá el control a los distintos módulos o subalgoritmos, los cuales, cuando terminen su tarea, devolverán el control al algoritmo que los llamó. Los módulos o subalgoritmos deberán ser pequeños, seguirán todas las reglas de la programación estructurada y podrán ser representados con las herramientas de programación habituales.
+    <br />
+    <br />
+    Un problema complejo se puede dividir en pequeños subproblemas más sencillos. Estos subproblemas se conocen como “Módulos” y su complementación en un lenguaje se llama subprograma (procedimientos y funciones).
+    <br />
+    <br />
+    Un subprograma realiza las mismas acciones que un programa, sin embargo, un subprograma lo utiliza solamente un programa para un propósito especifico.
+    <br />
+    <br />
+    Un subprograma recibe datos de un programa y le devuelve resultados (el programa “llama” o “invoca” al subprograma, este ejecuta una tarea específica y devuelve el “control” al programa que lo llamo).
+    
+    <div class="container">
+      <img src="./img/programacion-modular-y-estructurada/b.jpg" alt />
+    </div>
+    
+    <span class="highlight">Funciones.</span>
+    <br />
+    <br />
+    Una función en matemáticas, es una operación que toma un o mas valores (argumentos) y devuelve un resultado (valor de la función para los argumentos dados). Por ejemplo:
+    
+    <div class="container">
+      <img src="./img/programacion-modular-y-estructurada/c.jpg" alt />
+    </div>
+    
+    Una función desde el punto de vista de la programación, se define como un proceso que recibe valores de entrada (llamados argumentos) y el cual retorna un valor resultado. Las funciones son subprogramas dentro de un programa que se puede invocar (ejecutar), desde cualquier parte del programa, es decir, desde otra función, desde la misma función o desde el programa principal, cuantas veces sea necesario.
+    <br />
+    <br />
+    Una definición de función se presenta de la siguiente manera:
+    
+    <div class="container">
+      <img src="./img/programacion-modular-y-estructurada/d.jpg" alt />
+    </div>
+    
+    Ejemplo:
+    
+    <div class="container">
+      <img src="./img/programacion-modular-y-estructurada/e.jpg" alt />
+    </div>
+    
+    En dónde:
+    <br />
+    <br />
+    a) Función: Es la palabra clave que nos indica una definición de función.
+    <br />
+    b) Nombre_funcion: Es el identificador con el cual se reconoce a la función en el cuerpo del algoritmo principal.
+    <br />
+    c) arg1, arg2, ... argn: Es el grupo de parámetros que define a la función.
+    <br />
+    <br />
+    <span class="highlight">Llamado a una función.</span>
+    <br />
+    <br />
+    Cuando definimos una función solo le indicamos al algoritmo que esta función existe, pero una definición de función no implica la realización de las instrucciones que la constituyen. Para hacer uso de una función, el algoritmo principal la debe llamar. Por ejemplo:
+    
+    <div class="container">
+      <img src="./img/programacion-modular-y-estructurada/f.jpg" alt />
+    </div>
+    
+    <span class="highlight">Procedimientos.</span>
+    <br />
+    <br />
+    Un procedimiento es una parte del programa que realiza una acción específica basada a menudo en una serie de parámetros o argumentos. El procedimiento se ejecuta simplemente con una sentencia que es igual a su identificador seguido de los parámetros correspondientes, si los tiene, entre paréntesis. A diferencia de las funciones, no tiene sentido situarlos en una expresión porque no devuelven un valor una vez terminada su ejecución. Un procedimiento se define de la siguiente manera:
+    
+    <div class="container">
+      <img src="./img/programacion-modular-y-estructurada/g.jpg" alt />
+    </div>
+    
+    Los parámetros o argumentos son un mecanismo para pasar datos del programa principal a un procedimiento y viceversa. Los parámetros de la llamada para ejecutar la rutina se llaman parámetros reales mientras que los parámetros en la declaración de la rutina se llaman parámetros formales.
+    <br />
+    <br />
+    Los parámetros formales por valor permiten la introducción de información en el procedimiento. Sintaxis: identificador : tipo_dato; o si hay n parámetros por valor del mismo tipo: identificador_1,...,identificador_n : tipo_dato. Los valores son introducidos en la llamada a la subrutina mediante el parámetro real que puede ser una constante, una variable o una expresión con un valor determinado.
+    <br />
+    <br />
+    Al empezar a ejecutarse la subrutina se reserva espacio en memoria para el parámetro formal al que, en un principio, se le asigna el mismo valor que el parámetro real. Posteriormente los valores que vayan tomando durante la ejecución de la subrutina los parámetros real y formal serán independientes. Una vez terminada de ejecutar la subrutina se deja libre de uso el espacio de memoria correspondiente al parámetro formal.
+    <br />
+    <br />
+    <span class="highlight">Estructura de un algoritmo.</span>
+    
+    <div class="container">
+      <img src="./img/programacion-modular-y-estructurada/h.jpg" alt />
+    </div>
+    
+    <span class="highlight">Paso de Parámetros.</span>
+    <br />
+    <br />
+    Cuando un programa llama a un procedimiento o función se establece una correspondencia entre los parámetros actuales y los formales. Existen dos formas para establecer la correspondencia de parámetros.
+    <br />
+    <br />
+    a) Posicional: Emparejando los parámetros reales y formales según su posición en las listas. Esto requiere que ambas listas tengan el mismo número de parámetros y que los que se van a emparejar coincidan en su clase. En la definición del subprograma deberá reflejarse siempre de que clase es cada uno de los parámetros formales (E ... ).
+    <br />
+    <br />
+    b) La clase de dato debe ser estándar o haber sido definido de antemano. Si los parámetros formales se separan por comas es necesario, aunque no suficiente, que tengan la misma clase. Si su clase fuera distinto habría que escribir: (E ; E ).
+    <br />
+    <br />
+    c) Correspondencia por el nombre explícito. En las llamadas se indica explícitamente la correspondencia entre los parámetros reales y formales. Al hablar de los procedimientos se decía que devuelven resultados al programa principal a través de los parámetros, pero que también pueden recibir información, desde el programa principal, a través de ellos. Esto nos lleva a una clasificación de los parámetros en:
+    <br />
+    <br />
+    1. Parámetros de entrada: Permiten únicamente la transmisión de información desde el programa llamador al subprograma.
+    <br />
+    2. Parámetros de salida: Sólo devuelven resultados.
+    <br />
+    3. Parámetros de entrada/salida: Actúan en los dos sentidos, tanto mandando valores al subprograma, como devolviendo resultados desde el subprograma al programa llamador.
+    
+    <div class="container">
+      <img src="./img/programacion-modular-y-estructurada/i.jpg" alt />
+    </div>
+    
+    En los algoritmos, se debe especificar en la definición del subprograma cómo se desea que se comporte cada uno de los parámetros; para ello se empleará la siguiente terminología.
+    <br />
+    <br />
+    a) E equivale a parámetro de entrada.
+    <br />
+    b) S querrá decir parámetro de salida.
+    <br />
+    c) E/S parámetro de entrada/salida.
+    <br />
+    <br />
+    En la lista de parámetros siguiente (E , S), es parámetro de entrada y va a proporcionar datos al subprograma. es parámetro de salida y devolverá resultados al programa llamador. Aunque ambos son de la misma clase, habrá que repetir la clase para cada uno de ellos.
+    <br />
+    <br />
+    Todo esto afectará tanto a procedimientos como a funciones. De lo que se deduce que una función va a tener la posibilidad de devolver valores al programa principal de dos formas:
+    <br />
+    <br />
+    1. Como valor de la función.
+    <br />
+    2. A través de los parámetros.
+    <br />
+    <br />
+    Un procedimiento sólo podrá devolver resultados a través de los parámetros, de modo que al codificar el algoritmo se ha de tener mucho cuidado con el paso de parámetros, siendo preciso conocer los métodos de transmisión que posee el lenguaje, para poder conseguir el funcionamiento deseado.
+    
+    <div class="container">
+      <img src="./img/programacion-modular-y-estructurada/j.jpg" alt />
+    </div>
+    
+    Los lenguajes suelen disponer de: 
+    <br />
+    <br />
+    a) Paso por valor: Los parámetros formales correspondientes reciben una copia de los valores de los parámetros actuales; por lo tanto los cambios que se producen en ellos por efecto del subprograma no podrán afectar a los parámetros actuales y no se devolverá información al programa llamador. Los parámetros resultarían de Entrada, E.
+    <br />
+    <br />
+    b) Paso por valor resultado. Al finalizar la ejecución del subprograma los valores de los parámetros formales se transfieren o copian a los parámetros actuales.
+    <br />
+    <br />
+    c) Paso por referencia. Lo que se pasa al procedimiento es la dirección de memoria del parámetro actual. De esta forma, una variable pasada como parámetro actual es compartida; es decir, se puede modificar directamente por el subprograma. Los parámetros serían de Entrada/Salida, E/S. Es posible pasar como parámetros datos y subprogramas.
+    
+    <div class="container">
+      <img src="./img/programacion-modular-y-estructurada/k.jpg" alt />
+    </div>
+    
+    <span class="highlight">Variables Globales y Locales.</span>
+    <br />
+    <br />
+    Una variable es global cuando el ámbito en el que dicha variable se conoce es el programa completo. Consideraremos como variables globales las que hayan sido declaradas fuera del programa principal y como locales las declaradas en el propio subprograma.
+    <br />
+    <br />
+    Toda variable que se utilice en un procedimiento debe haber sido declarada en él. De esta forma todas las variables del procedimiento serán locales y la comunicación con el programa principal se realizará exclusivamente a través de los parámetros. Al declarar una variable en un procedimiento no importa que ya existiera otra con el mismo nombre en el programa principal; ambas serán distintas y, cuando nos encontremos en el procedimiento, sólo tendrá vigencia la declaración que hayamos efectuado en él. Trabajando de esta forma obtendremos la independencia de los módulos.
+    
+    <div class="container">
+      <img src="./img/programacion-modular-y-estructurada/l.jpg" alt />
+    </div>
+    
+    <span class="highlight">Encapsulación y ocultación de datos.</span>
+    <br />
+    <br />
+    El encapsulado o encapsulación de datos es el proceso de agrupar datos y operaciones relacionadas bajo la misma unidad de programación. En el caso de los objetos que poseen las mismas características y comportamiento se agrupan en clases, que no son más que unidades o módulos de programación que encapsulan datos y operaciones.
+    <br />
+    <br />
+    La ocultación de datos permite separar el aspecto de un componente, definido por su interfaz con el exterior, de sus detalles internos de implementación. Los términos ocultación de la información (information hiding) y encapsulación de datos (data encapsulation) se suelen utilizar como sinónimos, pero no siempre es así, y muy al contrario, son términos similares pero distintos.
+    <br />
+    <br />
+    Como se puede observar de los diagramas, las variables del objeto se localizan en el centro o núcleo del objeto. Los métodos rodean y esconden el núcleo del objeto de otros objetos en el programa. Al empaquetamiento de las variables de un objeto con la protección de sus métodos se le llama encapsulamiento. Típicamente, el encapsulamiento es utilizado para esconder detalles de la puesta en práctica no importantes de otros objetos. Entonces, los detalles de la puesta en práctica pueden cambiar en cualquier tiempo sin afectar otras partes del programa.
+    <br />
+    <br />
+    El encapsulamiento de variables y métodos en un componente de software ordenado es, todavía, una simple idea poderosa que provee dos principales beneficios a los desarrolladores de software:
+    <br />
+    <br />
+    a) Modularidad: esto es, el código fuente de un objeto puede ser escrito, así como darle mantenimiento, independientemente del código fuente de otros objetos. Así mismo, un objeto puede ser transferido alrededor del sistema sin alterar su estado y conducta.
+    <br />
+    <br />
+    b) Ocultamiento de la información: es decir, un objeto tiene una "interfaz publica" que otros objetos pueden utilizar para comunicarse con él. Pero el objeto puede mantener información y métodos privados que pueden ser cambiados en cualquier tiempo sin afectar a los otros objetos que dependan de ello.
+    <br />
+    <br />
+    Los objetos proveen el beneficio de la modularidad y el ocultamiento de la información. Las clases proveen el beneficio de la reutilización. Los programadores de software utilizan la misma clase, y por lo tanto el mismo código, una y otra vez para crear muchos objetos. <a class="link3" href="./programacion-modular-y-estructurada-ii">Seguir leyendo</a>
+  </div>
+</div>
+<div class="articleRight">
+  <div class="paragraph author">
+    Por: <span class="highlight">Gilda Gómez</span>
+  </div>
+  <div class="image">
+    <img src="./img/about/gilda.jpg" alt />
+  </div>
+  <div class="paragraph occupation">
+    Profesora de matemáticas.
+  </div>
+</div>
+<script type="text/javascript">
+  setLinks();
+</script>

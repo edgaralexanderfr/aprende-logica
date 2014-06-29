@@ -1,0 +1,115 @@
+/* begin loginLeft */
+
+.content .loginLeft {
+  width : 50%;
+  float : left;
+}
+
+.content .loginLeft .firstItem, .content .loginLeft .item {
+  margin-bottom : 20px;
+  width : 100%;
+  overflow : hidden;
+}
+
+.content .loginLeft .item {
+  margin-top : 20px;
+}
+
+.content .loginLeft .firstItem .left, .content .loginLeft .item .left {
+  margin-top : 12px;
+  width : 30%;
+  float : left;
+  text-align : center;
+}
+
+.content .loginLeft .firstItem .right, .content .loginLeft .item .right {
+  width : 70%;
+  float : right;
+  text-align : center;
+}
+
+.content .loginLeft .firstItem .right input, .content .loginLeft .item .right input {
+  width : 275px;
+}
+
+.content .loginLeft .loginErrorMessage {
+  margin : 0 auto;
+  margin-bottom : 20px;
+  padding : 15px;
+  width : 360px;
+  border : 1px solid;
+  border-color : red;
+  font-family : Arial;
+  font-style : italic;
+  font-size : 16px;
+  color : red;
+  text-align : center;
+  display : none;
+}
+
+.content .loginLeft #verifyingMessage {
+  display : none;
+}
+
+.content .loginLeft .access {
+  margin : 0 auto;
+  width : 80%;
+  overflow : hidden;
+}
+
+.content .loginLeft .access .left {
+  margin-top : 15px;
+  width : 50%;
+  text-align : left;
+  float : left;
+}
+
+.content .loginLeft .access .right {
+  width : 50%;
+  text-align : right;
+  float : right;
+}
+
+/* end loginLeft */
+
+/* begin loginRight */
+
+.content .loginRight {
+  width : 50%;
+  float : right;
+}
+
+.content .loginRight .dialogTitle {
+  margin-top : 40px;
+  margin-left : 20px;
+  width : 410px;
+  text-align : center;
+}
+
+.content .loginRight .image {
+  margin-top : 20px;
+  margin-bottom : 20px;
+  width : 100%;
+  text-align : center;
+}
+
+.content .loginRight .image img {
+  border : 2px solid;
+  border-color : #3C7169;
+}
+
+.content .loginRight .dialog {
+  margin-bottom : 40px;
+  width : 410px;
+  text-align : justify;
+}
+
+.content .loginRight .dialog .platon {
+  color : #a79aae;
+}
+
+.content .loginRight .dialog .socrates {
+  color : #976b78;
+}
+
+/* end loginRight */

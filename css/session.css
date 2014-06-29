@@ -1,0 +1,113 @@
+.content .dataTitle {
+  margin-top : 20px;
+  margin-bottom : 20px;
+  width : 100%;
+  font-family : Arial;
+  font-style : italic;
+  font-size : 18px;
+  color : black;
+  text-align : center;
+}
+
+.content .sessionItem {
+  margin-bottom : 20px;
+  width : 100%;
+  overflow : hidden;
+}
+
+.content .sessionItem {
+  margin-top : 20px;
+}
+
+.content .sessionItem .left {
+  margin-top : 12px;
+  width : 30%;
+  float : left;
+  text-align : center;
+}
+
+.content .sessionItem .right {
+  width : 70%;
+  float : right;
+  text-align : center;
+}
+
+.content .sessionItem .right input {
+  width : 200px;
+}
+
+.content .sessionSuccessMessage, .content .sessionErrorMessage {
+  margin : 0 auto;
+  margin-bottom : 20px;
+  padding : 15px;
+  width : 325px;
+  border : 1px solid;
+  font-family : Arial;
+  font-style : italic;
+  font-size : 16px;
+  text-align : center;
+  display : none;
+}
+
+.content .sessionSuccessMessage {
+  border-color : green;
+  color : green;
+}
+.content .sessionErrorMessage {
+  border-color : red;
+  color : red;
+}
+
+.content .sessionUpdate #validatingInfo {
+  display : none;
+}
+
+.content .sessionUpdate #validatingPassword {
+  display : none;
+}
+
+.content .sessionUpdate {
+  margin : 0 auto;
+  margin-bottom : 40px;
+  width : 80%;
+  overflow : hidden;
+}
+
+.content .sessionUpdate .left {
+  margin-top : 15px;
+  width : 50%;
+  text-align : left;
+  float : left;
+}
+
+.content .sessionUpdate .right {
+  width : 50%;
+  text-align : right;
+  float : right;
+}
+
+/* begin sessionLeft */
+
+.content .sessionLeft {
+  width : 50%;
+  float : left;
+}
+
+/* end sessionLeft */
+
+/* begin sessionRight */
+
+.content .sessionRight {
+  width : 50%;
+  float : right;
+}
+
+.content .sessionRight .buttons {
+  margin : 0 auto;
+  margin-top : 40px;
+  margin-bottom : 30px;
+  width : 80%;
+  text-align : right;
+}
+
+/* end sessionRight */

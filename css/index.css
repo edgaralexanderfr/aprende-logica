@@ -1,0 +1,221 @@
+body {
+  min-width : 1000px;
+  margin : 0px;
+}
+
+/* begin links */
+
+.link1 {
+  font-family : Arial;
+  font-size : small;
+  color : #3C7169;
+  text-decoration : none;
+}
+
+.link1:hover {
+  color : white;
+  text-decoration : underline;
+}
+
+.link2, .link3 {
+  font-family : Arial;
+  font-size : 16px;
+  color : #3C7169;
+  text-decoration : none;
+}
+
+.link3 {
+  font-weight : bold;
+}
+
+.link2:hover {
+  text-decoration : underline;
+}
+
+.link3:hover {
+  text-decoration : underline;
+}
+
+/* end links */
+
+/* begin inputs */
+
+.input1 {
+  padding : 10px;
+  background-color : #eeeeee;
+  border : 1px solid;
+  border-radius : 10px;
+  font-family : Arial;
+  font-style : italic;
+  font-size : 16px;
+  color : black;
+}
+
+.input2 {
+  font-family : Arial;
+  font-style : italic;
+  font-size : 16px;
+  color : #3C7169;
+}
+
+/* end inputs */
+
+/* begin buttons */
+
+.button1 {
+  padding : 10px;
+  border : 1px solid;
+  border-color : black;
+  background-color : #3C7169;
+  font-family : Arial;
+  font-weight : bold;
+  font-size : 16px;
+  color : white;
+}
+
+.button1:hover {
+  background-color : #25423e;
+}
+
+.button1:active {
+  background-color : #7fb5ae;
+}
+
+/* end buttons */
+
+/* begin loadingContent */
+
+.loadingContent {
+  top : 10px;
+  left : 10px;
+  width : 60px;
+  height : 60px;
+  border : 2px solid;
+  background-color : white;
+  background-image : url(../img/loading.gif);
+  background-repeat : no-repeat;
+  position : fixed;
+}
+
+/* end loadingContent */
+
+/* begin header */
+
+.header {
+  width : 100%;
+  min-height : 100px;
+  background-image : url(../img/banner/background.jpg);
+  background-repeat : repeat-x;
+}
+
+.header .left {
+  width : 70%;
+  float : left;
+}
+
+.header .left img {
+  margin-top : 25px;
+  margin-left : 25px;
+}
+
+.header .right {
+  margin-top : 40px;
+  width : 30%;
+  font-family : Arial;
+  font-size : small;
+  color : white;
+  text-align : center;
+  float : right;
+}
+
+/* end header */
+
+/* begin nav */
+
+.nav {
+  width : 100%;
+  background-color : grey;
+  text-align : center;
+}
+
+.nav .option {
+  margin : 5px;
+  padding-top : 20px;
+  padding-bottom : 20px;
+  width : 140px;
+  background-color : #444444;
+  font-family : Arial;
+  font-size : small;
+  color : white;
+  text-decoration : none;
+  text-align : center;
+  display : inline-block;
+}
+
+.nav .option:hover {
+  background-color : #3b6e67;
+  text-decoration : underline;
+}
+
+.nav .option:active {
+  background-color : #afafaf;
+  text-decoration : none;
+}
+
+/* end nav */
+
+/* begin content */
+
+.content {
+  margin : 0 auto;
+  margin-top : 20px;
+  margin-bottom : 20px;
+  width : 900px;
+  border : 1px solid;
+  overflow : hidden;
+}
+
+/* end content */
+
+/* begin footer */
+
+.footer {
+  padding-top : 20px;
+  padding-bottom : 20px;
+  width : 100%;
+  background-color : #222222;
+  font-family : Arial;
+  font-size : small;
+  color : white;
+  text-align : center;
+}
+
+/* end footer */
+
+/* begin other */
+
+.content .title, .content .pageTitle {
+  font-family : Arial;
+  font-size : 30px;
+  color : #333333;
+}
+
+.content .pageTitle {
+  margin-top : 40px;
+  margin-bottom : 40px;
+  margin-left : 50px;
+}
+
+.content .paragraph {
+  font-family : Arial;
+  font-size : 16px;
+  color : #666666;
+}
+
+.content .highlight {
+  font-style : italic;
+  font-weight : bold;
+  color : #3C7169;
+}
+
+/* end other */

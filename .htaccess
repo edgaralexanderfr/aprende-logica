@@ -1,0 +1,15 @@
+SetEnv DOMAIN aprende-logica.uni.me
+SetEnv SITE_PATH /aprende-logica/
+SetEnv IN_DTZ America/Caracas
+SetEnv OUT_DTZ America/Caracas
+
+Options -indexes
+
+Header always append X-Frame-Options SAMEORIGIN
+
+RewriteEngine On
+
+RewriteBase /
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^ /aprende-logica/?uri=%{REQUEST_URI} [L,R]

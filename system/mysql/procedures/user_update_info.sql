@@ -1,0 +1,1 @@
+drop procedure if exists user_update_info;delimiter // create procedure user_update_info (in p_id int(10) unsigned, in p_cedula varchar(11), in p_name varchar(50), in p_last_name varchar(50), in p_email varchar(320))   begin     update users set cedula = p_cedula, name = p_name, last_name = p_last_name, email = p_email where id = p_id;   end   //   delimiter ; 

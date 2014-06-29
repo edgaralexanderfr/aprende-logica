@@ -1,0 +1,1 @@
+drop procedure if exists user_update_password; delimiter // create procedure user_update_password (in p_id int(10) unsigned, in p_password_hash varchar(40), in p_salt varchar(32))   begin     update users set password_hash = p_password_hash, salt = p_salt where id = p_id;   end   //   delimiter ; 

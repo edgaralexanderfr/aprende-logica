@@ -1,0 +1,48 @@
+.content .optionsOption {
+  margin-left : 50px;
+  margin-bottom : 40px;
+}
+
+.content .sendHomeworkSuccessMessage, .content .sendHomeworkErrorMessage {
+  margin : 0 auto;
+  margin-top : 40px;
+  margin-bottom : 40px;
+  padding : 15px;
+  width : 85%;
+  border : 1px solid;
+  font-family : Arial;
+  font-style : italic;
+  font-size : 16px;
+  text-align : center;
+  display : none;
+}
+
+.content .sendHomeworkSuccessMessage {
+  border-color : green;
+  color : green;
+}
+
+.content .sendHomeworkErrorMessage {
+  border-color : red;
+  color : red;
+}
+
+.content .optionsSendHomework {
+  margin-left : 50px;
+  margin-bottom : 40px;
+  width : 70%;
+  overflow : hidden;
+  display : none;
+}
+
+.content .optionsSendHomework .left {
+  width : 60%;
+  text-align : center;
+  float : left;
+}
+
+.content .optionsSendHomework .right {
+  width : 40%;
+  text-align : center;
+  float : right;
+}
